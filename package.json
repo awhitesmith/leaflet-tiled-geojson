@@ -7,14 +7,27 @@
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "dev": "rollup -c -w"
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build"
   },
+  "files": [
+    "dist/leaflet-tiled-geojson.js",
+    "dist/leaflet-tiled-geojson.js.map",
+    "dist/index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "leaflet",
     "geojson",
     "tiles"
   ],
-  "author": "",
+  "author": "Andrew Whitesmith <awhitesmith.web@gmail.com> (https://github.com/awhitesmith)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awhitesmith/leaflet-tiled-geojson.git"
+  },
+  "homepage": "https://github.com/awhitesmith/leaflet-tiled-geojson",
   "license": "MIT",
   "peerDependencies": {
     "leaflet": "^1.9.0"
