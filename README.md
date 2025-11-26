@@ -1,5 +1,7 @@
 # leaflet-tiled-geojson
 
+[See Demo](https://awhitesmith.com/leaflet-tiled-geojson/)
+
 Leaflet layer for displaying tiled GeoJSON data. Handles levels of detail and feature deduplication. Essentially a drop in replacement for an `L.GeoJSON` layer.
 
 See [tiled-geojson](https://github.com/awhitesmith/tiled-geojson) for generating tiled GeoJSON.
@@ -16,6 +18,12 @@ path/
 │  │  ├─ tiles/
 │  │  │  ├─ <sha hash>.json
 │  │  │  ├─ ...
+```
+
+Include the script in your page's head.
+
+```html
+<script src="https://unpkg.com/leaflet-tiled-geojson@latest/dist/leaflet-tiled-geojson.js"></script>
 ```
 
 The tiled GeoJSON layer can be added similar to an L.GeoJSON layer. Options accepted are the same as an L.GeoJSON layer.
